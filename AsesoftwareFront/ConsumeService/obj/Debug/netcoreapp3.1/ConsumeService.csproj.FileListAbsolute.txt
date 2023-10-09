@@ -1,0 +1,13 @@
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\bin\Debug\netcoreapp3.1\ConsumeService.deps.json
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\bin\Debug\netcoreapp3.1\ConsumeService.dll
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\bin\Debug\netcoreapp3.1\ConsumeService.pdb
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.csproj.CopyComplete
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.dll
+C:\Users\ASUS\source\repos\AsesoftwareFront\ConsumeService\obj\Debug\netcoreapp3.1\ConsumeService.pdb

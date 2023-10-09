@@ -1,0 +1,119 @@
+﻿@model Domain.Turnos
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateUsuarioReserva</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="~/images/Asesoftware.jpeg" class="img-circle">
+    </div>
+    <br />
+
+    <div class="container" style="width:80%;">
+        <form id="frmUsuarioReserva">
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="Fecha_inicio" class="control-label">Fecha inicio</label>
+                        <input asp-for="Fecha_inicio" id="FechaInicio" class="form-control" />
+                        <span asp-validation-for="Fecha_inicio" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="Fecha_Fin" class="control-label">Fecha Fin</label>
+                        <input asp-for="Fecha_Fin" id="FechaFin" class="form-control" />
+                        <span asp-validation-for="Fecha_Fin" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="Id_Servicios" class="control-label">Servicio</label>
+                        <select asp-for="Id_Servicios" asp-items="ViewBag.listServicios" class="form-control">
+                            <option value="" disabled>-- Select Servicios --</option>
+                        </select>
+                        <span asp-validation-for="Id_Servicios" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" onclick="Validar()" />
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                @Html.Partial("indexList.cshtml", (List<Domain.TurnoInfo>)ViewBag.List)
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function Validar() {
+
+            var data = $("#frmUsuarioReserva").serialize();
+
+            $.ajax({
+
+                type: 'POST',
+                url: '/TurnosConsume/CreateTurnos',
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                data: data,
+                success: function (result) {
+                    swal({
+                        title: 'Registro exitoso!',
+                        icon: 'success'
+                    })
+
+                },
+                error: function () {
+                    alert('Failed to receive the Data');
+                    console.log('Failed ');
+                }
+            })
+
+        }
+
+    </script>
+
+</body>
+</html>
